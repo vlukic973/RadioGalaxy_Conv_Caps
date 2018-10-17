@@ -1,7 +1,7 @@
 # RadioGalaxy_Conv_Caps
 Python code for classifying Radio galaxies using ConvNet and CapsNet architectures
 
-Before running any of the python scripts, first download the necessary files:
+Before running any of the python scripts, first make sure keras is installed and download the necessary files:
 
 - train_test_X_6_class_orig_aug_7_9_18_cleaner.npy
 - train_test_Y_6_class_orig_aug_7_9_18_cleaner.npy
@@ -18,5 +18,12 @@ python convnet_LOFAR_radio_galaxy.py --n_test 600 --aug 'F' --save_dir /path/to/
 
 The Capsule network architectures are initially based on the capsulenet.py code from https://github.com/XifengGuo/CapsNet-Keras. To run the Capsule network architectures for the radio galaxy data, first go to the link provided and download the following:
 
--capsulelayers.py
--utils.py
+- capsulelayers.py
+- utils.py
+
+Example usage:
+
+python capsulenet_LOFAR_radio_galaxy_increase_filtersize.py --save_dir LOFAR_default_caps_13_10_18_inc_filtersize --n_test 600 --aug 'F' --path_to_npy_data "/path/to/npy/data/train_test_X_6_class_orig_aug_7_9_18_cleaner.npy" --path_to_labels "/path/to/labels/train_test_Y_6_class_orig_aug_7_9_18_cleaner.npy"
+
+python capsulenet_LOFAR_radio_galaxy_increase_filtersize.py --save_dir LOFAR_default_caps_13_10_18_inc_filtersize --n_test 600  --aug 'F' -t --digit 2 -w /path/to/LOFAR_default_caps_13_10_18_inc_filtersize_subset/trained_model.h5
+
