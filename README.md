@@ -12,7 +12,7 @@ When running the scripts it is assumed the orig_aug_solutions_15_10_18.csv and s
 
 To run the convolutional network achitectures, use the convnet_LOFAR_radio_galaxy.py script. 
 
-Example usage:
+ConvNet example usage:
 
 python convnet_LOFAR_radio_galaxy.py --n_test 600 --aug 'F' --save_dir /path/to/save_dir/ --epochs 3 --use_model 'simple' --path_to_npy_data "/path/to/npy/data/train_test_X_6_class_orig_aug_7_9_18_cleaner.npy" --path_to_labels "/path/to/labels/train_test_Y_6_class_orig_aug_7_9_18_cleaner.npy"
 
@@ -21,7 +21,7 @@ The Capsule network architectures are initially based on the capsulenet.py code 
 - capsulelayers.py
 - utils.py
 
-Example usage:
+CapsNet example usage:
 
 python capsulenet_LOFAR_radio_galaxy_increase_filtersize.py --save_dir LOFAR_default_caps_13_10_18_inc_filtersize --n_test 600 --aug 'F' --path_to_npy_data "/path/to/npy/data/train_test_X_6_class_orig_aug_7_9_18_cleaner.npy" --path_to_labels "/path/to/labels/train_test_Y_6_class_orig_aug_7_9_18_cleaner.npy"
 
