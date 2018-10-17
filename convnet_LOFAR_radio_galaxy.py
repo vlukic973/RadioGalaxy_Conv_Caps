@@ -51,9 +51,9 @@ seed(1)
 from tensorflow import set_random_seed
 set_random_seed(2)
 
-orig_aug_x_class=pd.read_csv("/lofar5/stvf319/LOFAR/Judith_cutouts/Code/github/upload_github/orig_aug_solutions_15_10_18.csv")
+orig_aug_x_class=pd.read_csv("orig_aug_solutions_15_10_18.csv")
 
-orig_x_class=pd.read_csv("/lofar5/stvf319/LOFAR/Judith_cutouts/Code/github/shuffle_data_1.csv")
+orig_x_class=pd.read_csv("shuffle_data_1.csv")
 
 orig_x_class.set_index('Unnamed: 0', inplace=True)
 
