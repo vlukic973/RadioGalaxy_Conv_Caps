@@ -25,5 +25,5 @@ CapsNet example usage:
 
 python capsulenet_LOFAR_radio_galaxy_increase_filtersize.py --save_dir LOFAR_default_caps_13_10_18_inc_filtersize --n_test 600 --aug 'F' --path_to_npy_data "/path/to/npy/data/train_test_X_6_class_orig_aug_7_9_18_cleaner.npy" --path_to_labels "/path/to/labels/train_test_Y_6_class_orig_aug_7_9_18_cleaner.npy"
 
-python capsulenet_LOFAR_radio_galaxy_increase_filtersize.py --save_dir LOFAR_default_caps_13_10_18_inc_filtersize --n_test 600  --aug 'F' -t --digit 2 -w /path/to/LOFAR_default_caps_13_10_18_inc_filtersize_subset/trained_model.h5
+python capsulenet_LOFAR_radio_galaxy_increase_filtersize.py --save_dir LOFAR_default_caps_13_10_18_inc_filtersize --n_test 600  --aug 'F' -t --digit 2 -w /path/to/LOFAR_default_caps_13_10_18_inc_filtersize_subset/trained_model.h5 --path_to_npy_data "/path/to/npy/data/train_test_X_6_class_orig_aug_7_9_18_cleaner.npy" --path_to_labels "/path/to/labels/train_test_Y_6_class_orig_aug_7_9_18_cleaner.npy"
 
